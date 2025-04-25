@@ -1,0 +1,63 @@
+/* 主應用樣式 */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* 卡片樣式 */
+.dashboard-card {
+  transition: transform 0.3s ease;
+  height: 100%;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* 表單樣式 */
+.form-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* 圖表容器 */
+.chart-container {
+  margin: 20px 0;
+  height: 300px;
+}
+
+/* 練習記錄表格 */
+.practice-table th,
+.practice-table td {
+  text-align: center;
+}
+
+/* 比賽記錄表格 */
+.game-record-table th,
+.game-record-table td {
+  text-align: center;
+}
+
+/* 成功率指示器 */
+.success-rate-indicator {
+  height: 10px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+/* 響應式調整 */
+@media (max-width: 600px) {
+  .content {
+    padding: 10px;
+  }
+}
